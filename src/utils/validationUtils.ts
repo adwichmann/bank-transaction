@@ -1,13 +1,13 @@
 export const validationUtils = {
   validateAmount(amount: number): void {
     if (amount === 0) {
-      throw new Error("O campo amount não pode ser zero.");
+      throw new Error("The amount field cannot be zero.");
     }
   },
 
   validateDescription(description: string): void {
     if (!description) {
-      throw new Error("O campo description é obrigatório.");
+      throw new Error("The description field is required.");
     }
   },
 };

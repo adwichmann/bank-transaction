@@ -1,5 +1,5 @@
 import { APIGatewayProxyHandler } from "aws-lambda";
-import { TransactionRepository } from "../repositories/transaction-repository";
+import { TransactionService } from "../services/transaction-service";
 
 export const getMonthlyBalance: APIGatewayProxyHandler = async (event) => {
   if (
@@ -19,8 +19,8 @@ export const getMonthlyBalance: APIGatewayProxyHandler = async (event) => {
   const month = event.queryStringParameters.month;
 
   try {
-    const repository = new TransactionRepository();
-    const balance = await repository.getMonthlyBalance(userId, month);
+    const service = new TransactionService();
+    const balance = await service.getMonthlyBalance(userId, month);
     return {
       statusCode: 200,
       body: JSON.stringify({ userId, month, balance }),

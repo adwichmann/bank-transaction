@@ -41,3 +41,13 @@ dist
 yarn.lock
 
 .vscode
+
+# Terraform
+.terraform
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+
+# Zip funcitions
+function.zip
