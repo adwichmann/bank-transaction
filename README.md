@@ -55,7 +55,7 @@ uma conta na AWS junto com AWS CLI configurado com suas credenciais AWS para sub
 ## Planejamento Arquitetural
 
 ### Diagrama
-![Diagrama de Streaming](https://github.com/user-attachments/assets/0a10fcc8-17ab-4736-813e-588de94cd1b3)
+![Diagrama de Streaming](https://github.com/user-attachments/assets/1d022e54-9e74-4e19-86df-97de21734640)
 
 ### Descrição
 
