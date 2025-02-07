@@ -12,12 +12,16 @@
   "description": "Este repositório contém o código para um microsserviço que gerencia transações financeiras. O serviço é implementado usando Node.js e TypeScript, rodando em AWS Lambda, com dados armazenados em uma tabela DynamoDB. A infraestrutura é provisionada usando Terraform",
   "devDependencies": {
     "@types/aws-lambda": "^8.10.147",
+    "@types/jest": "^29.5.14",
     "@types/node": "^22.13.1",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
     "typescript": "^5.7.3"
   },
   "dependencies": {
     "aws-lambda": "^1.0.7",
     "aws-sdk": "^2.1692.0",
+    "aws-sdk-mock": "^6.2.1",
     "nanoid": "^3.3.4"
   }
 }
