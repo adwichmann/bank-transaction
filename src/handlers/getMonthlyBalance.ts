@@ -2,6 +2,7 @@ import { APIGatewayProxyHandler } from "aws-lambda";
 import { TransactionService } from "../services/transaction-service";
 
 export const getMonthlyBalance: APIGatewayProxyHandler = async (event) => {
+  // Check if the required query parameters are provided in the event
   if (
     !event.queryStringParameters ||
     !event.queryStringParameters.userId ||
@@ -15,10 +16,12 @@ export const getMonthlyBalance: APIGatewayProxyHandler = async (event) => {
     };
   }
 
+  // Extract the userId and month from the query string parameters
   const userId = event.queryStringParameters.userId;
   const month = event.queryStringParameters.month;
 
   try {
+    // Create an instance of TransactionService to get monthly balance
     const service = new TransactionService();
     const balance = await service.getMonthlyBalance(userId, month);
     return {
@@ -26,6 +29,7 @@ export const getMonthlyBalance: APIGatewayProxyHandler = async (event) => {
       body: JSON.stringify({ userId, month, balance }),
     };
   } catch (error) {
+    // If an error occurs during the transaction retrieval process, return a 500 status with an error message
     return {
       statusCode: 500,
       body: JSON.stringify({

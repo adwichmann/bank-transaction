@@ -7,9 +7,9 @@
     "build": "tsc",
     "build-deploy": "rm -rf dist terraform/function.zip && tsc && zip -r terraform/function.zip dist node_modules"
   },
-  "author": "",
+  "author": "Adriano Wichmann",
   "license": "ISC",
-  "description": "",
+  "description": "Este repositório contém o código para um microsserviço que gerencia transações financeiras. O serviço é implementado usando Node.js e TypeScript, rodando em AWS Lambda, com dados armazenados em uma tabela DynamoDB. A infraestrutura é provisionada usando Terraform",
   "devDependencies": {
     "@types/aws-lambda": "^8.10.147",
     "@types/node": "^22.13.1",
