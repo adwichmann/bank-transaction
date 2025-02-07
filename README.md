@@ -28,8 +28,6 @@ uma conta na AWS junto com AWS CLI configurado com suas credenciais AWS para sub
 [AWS CLI](https://aws.amazon.com/pt/cli/)
 
 
-## Como Rodar
-
 ### Deploy
 
 1. Clone o repositório: `git clone https://github.com/adwichmann/bank-transaction.git`
