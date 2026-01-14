@@ -22,6 +22,6 @@
     "aws-lambda": "^1.0.7",
     "aws-sdk": "^2.1692.0",
     "aws-sdk-mock": "^6.2.1",
-    "nanoid": "^3.3.4"
+    "nanoid": "^3.3.8"
   }
 }
